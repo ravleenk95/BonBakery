@@ -1,0 +1,427 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background: #4c3a63;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Welcome Page CSS */
+.welcome-container{
+    text-align:center;
+}
+
+.welcome-text{
+    font-family:'Luckiest Guy', cursive;
+    font-size:70px;
+    color:#ffffff;
+    letter-spacing:3px;
+    margin-bottom:30px;
+    animation:zoomIn 1s ease;
+}
+
+.spinner-grow{
+    width:4rem;
+    height:4rem;
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* welcome page css Ends*/
+
+
+
+/* NAVBAR */
+.navbar {
+  background: #5a4374;
+}
+
+.custom-dropdown{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 12px;
+    min-width: 220px;
+}
+
+.custom-dropdown .dropdown-item{
+    color: #fff;
+    font-family: 'Ledger', serif;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-dropdown .dropdown-item:hover{
+    background: rgba(255,255,255,0.2);
+    color: #FFD54F;
+    transform: translateX(5px);
+}
+.nav-item.dropdown:hover .dropdown-menu{
+    display:block;
+    margin-top:0;
+}
+
+.dropdown-toggle::after{
+    margin-left:8px;
+}
+
+
+/* Main Section */
+.cake-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 40 40 40px;
+}
+/* Cake Image */
+.cake-img{
+    width:100%;
+    max-width:500px;
+    animation: float 3s ease-in-out infinite;
+	background: radial-gradient(circle, rgba(190,143,188,0.9) 0%, rgba(180,143,188,0.2) 40%, transparent 70%);
+}
+
+/* Floating Animation */
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* Heading */
+
+.main-heading{
+    font-size:90px;
+    font-weight:700;
+    color:white;
+    line-height:0.9;
+    letter-spacing:5px;
+}
+
+/* Description */
+
+.captionLine{
+    color:#ddd;
+    font-size:18px;
+    margin-top:20px;
+    max-width:500px;
+}
+
+/* Button */
+
+.cake-btn{
+    background:#ffc107;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    margin-top:25px;
+    transition:0.3s;
+	align-content: center;
+}
+
+.cake-btn:hover{
+    transform:scale(1.05);
+    background:#ffcd39;
+}
+.small-shape{
+	color:#B48FBC;
+	z-index:-1;
+	opacity: 0.5;
+}
+/* --- Menu Categories --- */
+        .menu-section {
+            padding: 60px;
+			background:#8e68a8;
+			border-radius: 10px;
+			margin-bottom: 50px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background-color: var(--primary-light);
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+            height: 100%;
+            transition: transform 0.3s ease;
+            position: relative;
+            /* Polka dot pattern */
+            background-image: radial-gradient(rgba(255,255,255,0.2) 2px, transparent 20px);
+            background-size: 20px 20px;
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+			background-color:#AD7EB3;
+        }
+        .category-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .category-card img {
+            max-width: 100%;
+			width:100%;
+            height:150px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+        }
+
+     .about-img 
+{
+      background: radial-gradient(circle, rgba(190,143,188,0.9) 0%, rgba(180,143,188,0.2) 40%, transparent 70%);
+}
+
+/* ABOUT */
+	.about{
+		background:#d6b8d9;
+	}
+
+.review-img{
+	width: 50px;
+}
+
+/* REVIEW SECTION */
+
+.review-section{
+    position:relative;
+    overflow:hidden;
+    background:#8e68a8;
+    border-radius:20px;
+    margin:10px auto;
+    padding:50px 40px;
+    max-width:1190px;
+}
+
+/* Quote Text */
+
+.review-text{
+    color:white;
+    font-size:30px;
+    font-weight:350px;
+    line-height:1.5;
+    position:relative;
+    z-index:1;
+}
+
+/* Quotes */
+.quote{
+    font-size:90px;
+    color:#d8b6e6;
+    font-weight:bold;
+    line-height:0;
+}
+
+/* Large Background Text */
+
+.bg-review{
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    font-size:140px;
+    font-weight:700;
+    color:#c49ad6;
+    opacity:0.25;
+    font-style:italic;
+    z-index:1;
+}
+
+/* --- Features Capsule --- */
+        .features-section {
+            padding: 60px 0;
+        }
+        .features-capsule {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 100px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+ /* --- Contact Form --- */
+        .contact-section {
+            padding: 80px 0;
+            position: relative;
+        }
+        .contact-box {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-box h2 {
+            margin-bottom: 30px;
+        }
+        .custom-input {
+            background-color: rgba(255,255,255,0.3);
+            border: none;
+            border-radius: 30px;
+            padding: 15px 25px;
+            color: white;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .custom-input::placeholder {
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+        textarea.custom-input {
+            border-radius: 20px;
+            min-height: 100px;
+        }
+        .btn-submit {
+            background-color:#D09F0B;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 40px;
+            color: white;
+            font-weight: semi-bold;
+            text-transform: uppercase;
+        }
+.btn-submit:hover{
+	background-color:#B08605;
+}
+
+.stack-img{
+	margin-top:-250px;
+	margin-bottom: -50px;
+	margin-left: 50px;
+	z-index:-10;
+}
+.cocostackimg1{
+margin-top:275px;
+margin-left: -180px;
+}
+.cocostackimg2
+{
+margin-top:30px;
+position: absolute;
+margin-left: -100px;	
+}
+
+/* --- Footer --- */
+        .footer {
+            background-color:#B48FBC;
+            padding: 40px 0 10px;
+            text-align: center;
+            color:#413254;
+        }
+        .footer-links a {
+            color:#413254;
+            text-decoration: none;
+            margin: 0 10px;
+            text-transform: uppercase;
+        }
+
+/* about us carousel*/
+.carousel{
+   max-width:100%;
+    margin: auto;
+	margin:20px;
+}
+
+.carousel-item img{
+    height: 900px;
+    object-fit:cover;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:768px)
+{
+
+    .main-heading{
+        font-size:55px;
+        margin-top:40px;
+    }
+
+    .cake-section{
+        text-align:center;
+    }
+	
+	
+.about-img {
+  width:300px;
+  justify-content: center;
+}
+	.about{
+	margin:10px;
+		padding:10px;
+	}
+	
+	.feature-box{
+	padding:5px;
+}
+	.stack-img{
+	display:none;
+}
+.cocostackimg1{
+display:none;
+}
+
+.cocostackimg2{
+display:none;
+}
+	
+	
+	
+	
+	
+	
+}
